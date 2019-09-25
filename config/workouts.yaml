@@ -1,0 +1,45 @@
+- id: 0
+  name: 'Jumping jacks'
+  category:
+    id: 0
+    name: 'Cardio'
+- id: 1
+  name: 'Push ups'
+  category:
+    id: 1
+    name: 'Upper body'
+- id: 2
+  name: 'Front squats'
+  category:
+    id: 2
+    name: 'Lower body'
+- id: 3
+  name: 'Back squats'
+  category:
+    id: 2
+    name: 'Lower body'
+- id: 4
+  name: 'Pull ups'
+  category:
+    id: 1
+    name: 'Upper body'
+- id: 5
+  name: 'Rings'
+  category:
+    id: 1
+    name: 'Upper body'
+- id: 6
+  name: 'Short sprints'
+  category:
+    id: 0
+    name: 'Cardio'
+- id: 7
+  name: 'Handstand practice'
+  category:
+    id: 1
+    name: 'Upper body'
+- id: 8
+  name: 'Jumping rope'
+  category:
+    id: 0
+    name: 'Cardio'

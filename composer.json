@@ -1,0 +1,14 @@
+{
+  "name": "home/wod-generator",
+  "description": "OneFit WOD Generator",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Wod\\": "src/Wod"
+    }
+  },
+  "require": {
+    "php-di/php-di": "^6.0",
+    "symfony/yaml": "^4.3"
+  }
+}
