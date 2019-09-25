@@ -2,7 +2,6 @@
 
 namespace Wod\Handler;
 
-use Wod\Enum\CategoryEnum;
 use Wod\Enum\WorkoutEnum;
 use Wod\Model\Participant;
 use Wod\Model\Workout;
@@ -28,12 +27,10 @@ class HandstandPracticeHandler implements WorkoutHandlerInterface
      */
     public function handle(Workout $workout, Participant $participant): bool
     {
-        if (WorkoutEnum::HANDSTAND_PRACTICE === $workout->getName()) {
-            if ($participant->isBeginner()) {
-                foreach ($participant->getWod() as $workout) {
-                    if (WorkoutEnum::HANDSTAND_PRACTICE === $workout->getName()) {
-                        return false;
-                    }
+        if (WorkoutEnum::HANDSTAND_PRACTICE === $workout->getName() && $participant->isBeginner()) {
+            foreach ($participant->getWod() as $workout) {
+                if (WorkoutEnum::HANDSTAND_PRACTICE === $workout->getName()) {
+                    return false;
                 }
             }
         }

@@ -4,11 +4,13 @@
   "type": "project",
   "autoload": {
     "psr-4": {
-      "Wod\\": "src/Wod"
+      "Wod\\": "src/Wod",
+      "Wod\\Tests\\": "tests"
     }
   },
   "require": {
     "php-di/php-di": "^6.0",
-    "symfony/yaml": "^4.3"
+    "symfony/yaml": "^4.3",
+    "phpunit/phpunit": "^8.3"
   }
 }
