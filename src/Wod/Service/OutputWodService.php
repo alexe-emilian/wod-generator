@@ -17,7 +17,6 @@ class OutputWodService
         $schedule = [];
 
         for ($timer = 0; $timer < WorkoutEnum::MAX_TIMER; $timer++) {
-            $limitedForTimer = 0;
             foreach ($participants as $participant) {
                 $element = $participant->getWod()[$timer];
 
@@ -36,13 +35,6 @@ class OutputWodService
                         $participant->getName()
                     );
                     $schedule[$timer][] = $this->padElement($output);
-                }
-
-                if ($element instanceof Workout) {
-                    if (WorkoutEnum::PULL_UPS === $element->getName()
-                        || WorkoutEnum::RINGS === $element->getName()) {
-                        $limitedForTimer += 1;
-                    }
                 }
             }
         }
